@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Acessibilidade GTA — Configuração</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Acessibilidade GTA</h1>
+    <p class="sub">Configuração de comandos de voz</p>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <button id="btn-reload" type="button">Recarregar do disco</button>
+      <button id="btn-save"   type="button" class="primary">Salvar</button>
+      <span id="status" class="status"></span>
+    </section>
+
+    <section id="commands"></section>
+
+    <section class="help">
+      <h3>Como usar</h3>
+      <ul>
+        <li><b>Palavras-chave</b>: uma por linha. O sistema identifica se qualquer uma delas aparece na sua fala.</li>
+        <li><b>Teclas especiais</b>: <code>shift</code>, <code>space</code>, <code>enter</code>, <code>tab</code>, <code>ctrl</code>, <code>alt</code>, <code>esc</code>, <code>f1</code>–<code>f12</code>, setas.</li>
+        <li><b>Mouse</b>: <code>mouse_left</code>, <code>mouse_right</code>, <code>mouse_middle</code>.</li>
+        <li><b>Letras/números</b>: use só o caractere. Ex: <code>f</code>, <code>b</code>, <code>1</code>.</li>
+        <li>Para testar a tecla sem falar, clique em <b>Testar</b>. Dê foco no GTA antes (alt-tab).</li>
+      </ul>
+    </section>
+  </main>
+
+  <template id="tpl-command">
+    <article class="card" data-id="">
+      <header>
+        <h2 class="label"></h2>
+        <span class="type-badge"></span>
+      </header>
+      <p class="desc"></p>
+      <div class="fields">
+        <label class="field-keywords">
+          <span>Palavras-chave (uma por linha)</span>
+          <textarea rows="5" spellcheck="false"></textarea>
+        </label>
+        <div class="type-fields"></div>
+      </div>
+      <footer>
+        <button type="button" class="btn-test">Testar</button>
+      </footer>
+    </article>
+  </template>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+{
+  "commands": [
+    {
+      "id": "enter_vehicle",
+      "label": "Entrar no carro",
+      "description": "Entra no carro mais próximo (motorista), liga o motor e pede cinto. Precisa estar perto do carro.",
+      "keywords": [
+        "entrar no carro",
+        "entra no carro",
+        "entra aí no carro",
+        "entrar carro",
+        "entra carro",
+        "bora pro carro",
+        "entra ai",
+        "entra no veiculo",
+        "entrar no veiculo",
+        "entra veiculo"
+      ],
+      "type": "engine",
+      "engine_action": "enter_vehicle"
+    },
+    {
+      "id": "enter_trunk",
+      "label": "Entrar no porta-malas",
+      "description": "Abre o porta-malas do carro mais próximo e entra nele.",
+      "keywords": [
+        "entrar porta malas",
+        "entra porta malas",
+        "entrar no porta malas",
+        "entra no porta malas",
+        "porta malas",
+        "porta mala",
+        "bora pro porta malas",
+        "portamalas",
+        "entrar portamalas",
+        "entrar na mala",
+        "entra na mala",
+        "entrar mala",
+        "entra mala",
+        "na mala",
+        "mala",
+        "bau",
+        "baú",
+        "entra no bau",
+        "entrar no bau",
+        "entra no baú"
+      ],
+      "type": "engine",
+      "engine_action": "enter_trunk"
+    },
+    {
+      "id": "run",
+      "label": "Correr (segurar tecla)",
+      "description": "Corre pra frente na direção da câmera até mandar andar. Não exige que o player segure W.",
+      "keywords": [
+        "corre",
+        "correr",
+        "corra",
+        "corri",
+        "correu",
+        "sai correndo",
+        "acelera",
+        "acelerar",
+        "cora",
+        "core"
+      ],
+      "type": "engine",
+      "engine_action": "sprint_start"
+    },
+    {
+      "id": "walk",
+      "label": "Parar de correr",
+      "description": "Solta a tecla de corrida e para de andar pra frente.",
+      "keywords": [
+        "anda",
+        "andar",
+        "ande",
+        "andando",
+        "para de correr",
+        "para",
+        "pare",
+        "parar",
+        "calma",
+        "parou",
+        "pra",
+        "para ai"
+      ],
+      "type": "engine",
+      "engine_action": "sprint_stop"
+    },
+    {
+      "id": "jump",
+      "label": "Pular",
+      "description": "Pulo único (TaskJump nativo).",
+      "keywords": [
+        "pula",
+        "pular",
+        "pule",
+        "salta",
+        "saltar",
+        "pulo",
+        "pulou",
+        "pulha",
+        "pulá",
+        "pulu",
+        "pulinho"
+      ],
+      "type": "engine",
+      "engine_action": "jump"
+    },
+    {
+      "id": "shoot",
+      "label": "Atirar (rajada curta)",
+      "description": "Mira e atira por 400ms.",
+      "keywords": [
+        "atira",
+        "atirar",
+        "atire",
+        "atirou",
+        "atiro",
+        "dispara",
+        "disparar",
+        "manda bala",
+        "tira",
+        "mata",
+        "dá tiro",
+        "da tiro",
+        "da um tiro"
+      ],
+      "type": "engine",
+      "engine_action": "shoot",
+      "engine_params": {"duration_ms": 400}
+    },
+    {
+      "id": "eat",
+      "label": "Comer",
+      "description": "Consome a primeira comida que tiver na mochila.",
+      "keywords": [
+        "comer",
+        "come",
+        "coma",
+        "comi",
+        "comendo",
+        "comeu",
+        "come alguma coisa",
+        "come ai",
+        "quero comer"
+      ],
+      "type": "engine",
+      "engine_action": "eat"
+    },
+    {
+      "id": "drink",
+      "label": "Beber",
+      "description": "Consome a primeira bebida que tiver na mochila.",
+      "keywords": [
+        "beber",
+        "bebe",
+        "beba",
+        "bebi",
+        "bebeu",
+        "bebendo",
+        "bebe agua",
+        "bebe água",
+        "bebe ai",
+        "quero beber",
+        "agua",
+        "água"
+      ],
+      "type": "engine",
+      "engine_action": "drink"
+    },
+    {
+      "id": "use_rope",
+      "label": "Pegar na corda",
+      "description": "Usa a corda do inventário no aliado mais próximo.",
+      "keywords": [
+        "pegar na corda",
+        "pega na corda",
+        "pegar corda",
+        "pega corda",
+        "pegou corda",
+        "usa corda",
+        "usar corda",
+        "puxa corda",
+        "corda"
+      ],
+      "type": "engine",
+      "engine_action": "use_rope"
+    },
+    {
+      "id": "action_mode_on",
+      "label": "Ativar modo ação (head tracker + aim assist)",
+      "description": "Liga controle de câmera por cabeça + aim assist leve + boca dispara.",
+      "keywords": [
+        "modo acao",
+        "modo ação",
+        "ativar modo acao",
+        "ativar modo ação",
+        "liga modo acao",
+        "liga modo ação",
+        "ligar modo acao",
+        "ligar modo ação",
+        "iniciar modo acao",
+        "modo de acao",
+        "modo de ação",
+        "ativar acao",
+        "ativar ação"
+      ],
+      "type": "enter_action_mode"
+    },
+    {
+      "id": "action_mode_off",
+      "label": "Desativar modo ação",
+      "description": "Desliga head tracker e aim assist.",
+      "keywords": [
+        "desativar modo acao",
+        "desativar modo ação",
+        "sair do modo acao",
+        "sair do modo ação",
+        "desliga modo acao",
+        "desliga modo ação",
+        "desligar modo acao",
+        "desligar modo ação",
+        "sair modo acao",
+        "fechar modo acao",
+        "fechar modo ação"
+      ],
+      "type": "exit_action_mode"
+    },
+    {
+      "id": "gaze_recalibrate",
+      "label": "Recalibrar head tracker",
+      "description": "Calibração completa de 5 poses.",
+      "keywords": [
+        "recalibrar",
+        "recalibra",
+        "recalibre",
+        "recapturar",
+        "recaptura",
+        "ajustar cabeca",
+        "ajustar cabeça",
+        "pose neutra",
+        "calibrar de novo",
+        "calibrar cabeca",
+        "calibrar cabeça",
+        "nova calibracao",
+        "nova calibração"
+      ],
+      "type": "gaze_recalibrate"
+    }
+  ]
+}

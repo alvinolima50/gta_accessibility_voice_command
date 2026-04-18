@@ -1,0 +1,5 @@
+# head_tracker reusa primitivas do gaze_tracker (FaceTracker, MouthDetector, filtro).
+# Os pacotes abaixo são os mesmos.
+mediapipe==0.10.21
+opencv-python>=4.8
+numpy>=1.24

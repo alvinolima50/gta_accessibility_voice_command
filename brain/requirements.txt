@@ -1,0 +1,13 @@
+python-dotenv>=1.0.0
+deepgram-sdk>=3.7,<4.0
+sounddevice>=0.4.6
+numpy>=1.24
+pynput>=1.7.6
+fastapi>=0.110
+uvicorn>=0.27
+
+# Eye tracker (modo ação)
+# Pin específico: versões 0.10.22+ deixaram de expor `mp.solutions` no top-level
+# (quebra a API legacy que usamos). 0.10.21 é a última estável com a API antiga.
+mediapipe==0.10.21
+opencv-python>=4.8
